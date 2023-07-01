@@ -1,46 +1,46 @@
 const express = require('express');
 const router = express.Router();
 const Order = require('../models/DefaultOrders');
-// const OrderDB = require('../models/Orders');
-// const cron = require('node-cron');
-// const job = cron.schedule('0 0 * * *', async () => {
-//     try {
-//         const currentDate = new Date().toLocaleDateString();
+const OrderDB = require('../models/Orders');
+const cron = require('node-cron');
+const job = cron.schedule('0 0 * * *', async () => {
+    try {
+        const currentDate = new Date().toLocaleDateString();
         
-//         await Order.updateMany({}, { $set: { to_date: currentDate } });
+        await Order.updateMany({}, { $set: { to_date: currentDate } });
 
         
-//         const orders = await Order.find({ to_date: currentDate });
+        const orders = await Order.find({ to_date: currentDate });
 
-//         for (const order of orders) {
-//             let data = order.order_data
-//             await data.splice(0,0,{Order_date:order.to_date})
-//             let eId = await OrderDB.findOne({ 'email':order.email })    
+        for (const order of orders) {
+            let data = order.order_data
+            await data.splice(0,0,{Order_date:order.to_date})
+            let eId = await OrderDB.findOne({ 'email':order.email })    
             
-//             if (eId===null) {
+            if (eId===null) {
                 
-//                     await OrderDB.create({
-//                         email: order.email,
-//                         order_data:[data]
-//                     })
+                    await OrderDB.create({
+                        email: order.email,
+                        order_data:[data]
+                    })
                 
-//             }
+            }
         
-//             else {
+            else {
                 
-//                     await OrderDB.findOneAndUpdate({email:order.email},
-//                         { $push:{order_data: data} })
+                    await OrderDB.findOneAndUpdate({email:order.email},
+                        { $push:{order_data: data} })
                 
-//             }
-//         }
+            }
+        }
 
-//         console.log('Cron job executed successfully');
-//     } catch (error) {
-//         console.log('Cron job error:', error.message);
-//     }
-// });
+        console.log('Cron job executed successfully');
+    } catch (error) {
+        console.log('Cron job error:', error.message);
+    }
+});
 
-// job.start();
+job.start();
 
 router.post('/DefaultOrderdata', async (req, res) => {
     let data = req.body.order_data
@@ -106,20 +106,20 @@ router.post('/DisplayDefaultOrderdata', async (req, res) => {
   });
   
 
-//   router.post('/DropDefaultOrder', async (req, res) => {
-//     try {
-//         job.stop();
-//         const result = await Order.deleteOne({ email: req.body.email });
+  router.post('/DropDefaultOrder', async (req, res) => {
+    try {
+        job.stop();
+        const result = await Order.deleteOne({ email: req.body.email });
         
-//         if (result.deletedCount === 0) {
-//           return res.status(404).json({ message: 'Default order not found' });
-//         }
+        if (result.deletedCount === 0) {
+          return res.status(404).json({ message: 'Default order not found' });
+        }
         
-//         res.json({ success: true });
-//       } catch (error) {
-//         res.status(500).json({ message: 'Internal server error' });
-//       }
-// });
+        res.json({ success: true });
+      } catch (error) {
+        res.status(500).json({ message: 'Internal server error' });
+      }
+});
 router.post('/CheckDefaultOrder', async (req, res) => {
     try {
       const existingOrder = await Order.findOne({ email: req.body.email });
