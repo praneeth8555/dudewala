@@ -16,7 +16,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "build":"npm run build-client",
+    
     "install-server": "cd backend && npm install",
     "start-server": "cd backend && node index.js",
     "install-client": " npm install",
