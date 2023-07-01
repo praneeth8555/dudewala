@@ -4,6 +4,7 @@ const cors = require('cors');
 const app = express();
 const port = process.env.PORT||4000;
 const MongoDB = require('./db');
+const path = require('path');
 MongoDB();
 app.get('/', (req, res) => {
   res.send('Hello World!')
@@ -27,3 +28,9 @@ app.use('/api',require('./Routes/DefaultOrderdata'))
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+if (process.env.NODE_ENV === 'production') {
+  
+  app.use(express.static('/build'));
+
+  app.get('*', (req,res) => res.sendFile(path.resolve(__dirname, 'build','index.html')));
+}
