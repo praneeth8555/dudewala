@@ -7,7 +7,7 @@ export default function EditUserProfile({ userData }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-          const response = await fetch("http://localhost:4000/api/updateUser", {
+          const response = await fetch("https://dudewalaservices.onrender.com/api/updateUser", {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'

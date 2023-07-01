@@ -20,7 +20,7 @@
     "start-server": "cd backend && node index.js",
     "install-client": " npm install",
     "build-client": "npm run build",
-    "start-client": " npm run start"
+    "start-client": " npm start"
 
   },
   "eslintConfig": {

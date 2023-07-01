@@ -7,7 +7,7 @@ export default function MyOrders() {
 
 
   async function fetchMyOrder() {
-    await fetch('http://localhost:4000/api/myOrderData', {
+    await fetch('https://dudewalaservices.onrender.com/api/myOrderData', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

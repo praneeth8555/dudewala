@@ -12,7 +12,7 @@ export default function Orders() {
     const [selectedBrand, setSelectedBrand] = useState('');
 
     const loaddata = async () => {
-        let response = await fetch('http://localhost:4000/api/DisplayData', {
+        let response = await fetch('https://dudewalaservices.onrender.com/api/DisplayData', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
