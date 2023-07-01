@@ -9,10 +9,10 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 app.use(cors({
-  origin:"https://dudewala.onrender.com",
+  origin:"https://dudewala.onrender.com"|| "https://localhost:3000/",
 }));
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "https://dudewala.onrender.com");
+  res.setHeader("Access-Control-Allow-Origin", "https://dudewala.onrender.com"||"https://localhost:3000/");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"

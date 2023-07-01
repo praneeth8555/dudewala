@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.set("strictQuery", false);
+mongoose.set("strictQuery", true);
 const MongoDB = () => {
     mongoose.connect(process.env.DB, { useNewUrlParser: true }, async (err, res) => {
         if (err) console.log("---", err);
