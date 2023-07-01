@@ -1,0 +1,328 @@
+[
+    {
+        "name": "Amul Gold",
+        "brand": "Amul",
+        "description": "Amul Gold is the premium quality milk known for its purity and taste.",
+        "price": 78, 
+        "category": "milk",
+        "image":"https://amul.com/files/products/amul-gold.png",
+        "quantity": "1 liter"
+      },
+      {
+        "name": "Amul Taaza",
+        "brand": "Amul",
+        "description": "Amul Taaza is fresh and delicious milk that provides essential nutrients.",
+        "price": 37,
+        "category": "milk",
+        "image":"https://amul.com/files/products/amul-tazza.png",
+        "quantity": "500 ml"
+      },
+      {
+        "name": "Amul Slim 'n' Trim",
+        "brand": "Amul",
+        "description": "Amul Slim 'n' Trim is low-fat milk designed for health-conscious individuals.",
+        "price": 80,
+        "category": "milk",
+        "image":"https://amul.com/files/products/amul-slim-trim.png",
+        "quantity": "1 liter"
+      },
+      {
+        "name": "Amul Shakti",
+        "brand": "Amul",
+        "description": "Amul Shakti milk is packed with nutrition, making it a perfect choice for your daily needs.",
+        "price": 30,
+        "category": "milk",
+        "image":"https://amul.com/files/products/amul-shakti.jpg",
+        "quantity": "500 ml"
+      },
+      {
+        "name": "Amul Diamond",
+        "brand": "Amul",
+        "description": "Amul Diamond milk is enriched with essential vitamins and minerals for a healthier you.",
+        "price": 44,
+        "category": "milk",
+        "image":"https://amul.com/files/products/amul-diamond.png",
+        "quantity": "1 liter"
+      },
+      {
+        "name": "Amul Cow Milk",
+        "brand": "Amul",
+        "description": "Amul Cow Milk is pure and fresh cow's milk sourced from trusted dairy farms.",
+        "price": 70,
+        "category": "milk",
+        "image":"https://amul.com/files/products/amul-cow-milk.png",
+        "quantity": "1 liter"
+      },
+      {
+        "name": "Amul Gold Special",
+        "brand": "Amul",
+        "description": "Amul Gold Special is a premium quality milk with an extra rich taste and texture.",
+        "price": 78,
+        "category": "milk",
+        "image":"https://amul.com/files/products/amul-gold-speacial.png",
+        "quantity": "1 liter"
+      },
+      {
+        "name": "Amul Buffalo Milk",
+        "brand": "Amul",
+        "description": "Amul Buffalo Milk is creamy and nutritious milk sourced from healthy buffaloes.",
+        "price": 68,
+        "category": "milk",
+        "image":"https://amul.com/files/products/amul-buffalo.png",
+        "quantity": "1 liter"
+      },
+      {
+        "name": "Amul Deshi A2 Cow Milk",
+        "brand": "Amul",
+        "description": "Amul Deshi A2 Cow Milk is pure, traditional cow milk with A2 protein goodness.",
+        "price": 60,
+        "category": "milk",
+        "image":"https://amul.com/files/products/amul-deshi-a2.png",
+        "quantity": "1 liter"
+      },
+      {
+        "name": "Amul Masti Dahi",
+        "brand": "Amul",
+        "description": "Smooth and creamy curd.",
+        "price": 35.00,
+        "category": "curd",
+        "image":"https://amul.com/files/products/amul_masti_dahi.jpg",
+        "quantity": "500g"
+      },
+      {
+        "name": "Amul Fruit Dahi",
+        "brand": "Amul",
+        "description": "Creamy curd with a mix of delicious fruits.",
+        "price": 40.00,
+        "category": "curd",
+        "image":"https://amul.com/files/products/amul_fruit_dahi.png",
+        "quantity": "400g"
+      },
+      {
+        "name": "Amul Mishti Doi",
+        "brand": "Amul",
+        "description": "Sweet and thick curd-based dessert.",
+        "price": 45.00,
+        "category": "curd",
+        "image":"https://amul.com/files/products/amul_mishti_doi.jpg",
+        "quantity": "500g"
+      },
+      {
+        "name": "Amul Meetha Dahi",
+        "brand": "Amul",
+        "description": "Delicious and mildly sweet curd.",
+        "price": 30.00,
+        "category": "curd",
+        "image":"https://amul.com/files/products/amul_meetha_dahi.jpg",
+        "quantity": "400g"
+      },
+      {
+        "name": "Amul Premium Dahi",
+        "brand": "Amul",
+        "description": "Rich and creamy high-quality curd.",
+        "price": 50.00,
+        "category": "curd",
+        "image":"https://amul.com/files/products/amul_premium_dahi.jpg",
+        "quantity": "400g"
+      },
+      {
+        "name": "Amul Low Fat Dahi",
+        "brand": "Amul",
+        "description": "Low-fat curd with a light and creamy texture.",
+        "price": 70.00,
+        "category": "curd",
+        "image":"https://amul.com/files/products/amul_low_fat_dahi.jpg",
+        "quantity": "500g"
+      },
+      {
+        "name": "Amul Cream Cheese",
+        "brand": "Amul",
+        "description": "Smooth and creamy cheese spread.",
+        "price": 85.00,
+        "category": "cheese",
+        "image":"https://amul.com/files/products/creame_cheese_2.png",
+        "quantity": "200g"
+      },
+      {
+        "name": "Amul Malai Paneer",
+        "brand": "Amul",
+        "description": "Rich and creamy cottage cheese.",
+        "price": 80.00,
+        "category": "paneer",
+        "image":"https://amul.com/files/products/paneer_latest.JPG",
+        "quantity": "500g"
+      },
+      {
+        "name": "Amul Cow Ghee",
+        "brand": "Amul",
+        "description": "Pure and aromatic clarified butter made from cow's milk.",
+        "price": 200.00,
+        "category": "ghee",
+        "image":"https://amul.com/files/products/High-Aroma-Cow-Ghee_with_yellowBg.jpg",
+        "quantity": "1kg"
+      },
+      {
+        "name": "Amul Sagar Ghee",
+        "brand": "Amul",
+        "description": "Premium quality clarified butter with a rich flavor.",
+        "price": 300.00,
+        "category": "ghee",
+        "image":"https://amul.com/files/products/sagar_ghee.jpg",
+        "quantity": "1kg"
+      },
+      {
+        "name": "Toned Milk",
+        "brand": "Heritage",
+        "description": "Heritage Toned Milk is a low-fat milk with a creamy taste. It is perfect for those who prefer a lighter milk option without compromising on nutrition.",
+        "price": 35.0,
+        "category": "milk",
+        "image":"https://www.heritagefoods.in/static/images/detailslider/mega/tonemilk.jpg",
+        "quantity": "1 liter"
+      },
+      {
+        "name": "Full Cream Milk",
+        "brand": "Heritage",
+        "description": "Heritage Full Cream Milk is rich and creamy, providing a wholesome and nourishing experience. Enjoy the natural goodness of full cream milk in every sip.",
+        "price": 40.0,
+        "category": "milk",
+        "image":"https://www.heritagefoods.in/static/images/detailslider/mega/fullcream-milk.jpg",
+        "quantity": "1 liter"
+      },
+      {
+        "name": "Standardized Milk",
+        "brand": "Heritage",
+        "description": "Heritage Standardized Milk offers a balanced combination of taste and nutrition. It undergoes a standardization process to deliver consistent quality and taste.",
+        "price": 45.0,
+        "category": "milk",
+        "image":"https://www.heritagefoods.in/static/images/detailslider/mega/standardized-milk.jpg",
+        "quantity": "1 liter"
+      },
+      {
+        "name": "Double Toned Milk",
+        "brand": "Heritage",
+        "description": "Heritage Double Toned Milk is a low-fat milk variant that is ideal for those looking for a healthier option. It has a lighter texture without compromising on essential nutrients.",
+        "price": 30.0,
+        "category": "milk",
+        "image":"https://www.heritagefoods.in/static/images/detailslider/mega/dbtoned-milk.jpg",
+        "quantity": "1 liter"
+      },
+      {
+        "name": "Cow Milk",
+        "brand": "Heritage",
+        "description": "Heritage Cow Milk is sourced from carefully selected cows, ensuring the highest quality and freshness. It offers a rich and creamy taste for your daily consumption.",
+        "price": 50.0,
+        "category": "milk",
+        "image":"https://www.heritagefoods.in/static/images/detailslider/mega/cowmilk.jpg",
+        "quantity": "1 liter"
+      },
+      {
+        "name": "Slim Milk",
+        "brand": "Heritage",
+        "description": "Heritage Slim Milk is a low-fat milk option designed to support a healthy lifestyle. It is perfect for those who want to enjoy milk while keeping their calorie intake in check.",
+        "price": 55.0,
+        "category": "milk",
+        "image":"https://www.heritagefoods.in/static/images/detailslider/mega/slim-milk.jpg",
+        "quantity": "1 liter"
+      },
+      {
+        "name": "A2 Full Cream Milk",
+        "brand": "Heritage",
+        "description": "Heritage A2 Full Cream Milk is sourced from pure A2 cow milk, known for its rich flavor and health benefits. Experience the goodness of traditional A2 milk in every glass.",
+        "price": 60.0,
+        "category": "milk",
+        "image":"https://www.heritagefoods.in/static/images/detailslider/mega/a2fullcreammilk.jpg",
+        "quantity": "1 liter"
+      },
+      {
+        "name": "Total Curd",
+        "brand": "Heritage",
+        "description": "Thick and creamy curd with a rich texture.",
+        "price": 35.00,
+        "category": "curd",
+        "image":"https://www.heritagefoods.in/static/images/detailslider/mega/totalcurd.jpg",
+        "quantity": "500g"
+      },
+      {
+        "name": "Probiotic Curd",
+        "brand": "Heritage",
+        "description": "Curd enriched with beneficial probiotics for gut health.",
+        "price": 40.00,
+        "category": "curd",
+        "image":"https://www.heritagefoods.in/static/images/detailslider/mega/probioticcurd.jpg",
+        "quantity": "400g"
+      },
+      {
+        "name": "Cremalicious Curd",
+        "brand": "Heritage",
+        "description": "Indulgent and velvety curd with a luscious taste.",
+        "price": 45.00,
+        "category": "curd",
+        "image":"https://www.heritagefoods.in/static/images/detailslider/mega/creamilicious.png",
+        "quantity": "500g"
+      },
+      {
+        "name": "A2 Toned Buffalo Milk",
+        "brand": "Sid's Farm",
+        "description": "Healthy and nutritious milk from A2 buffalo breed.",
+        "price": 50.00,
+        "category": "milk",
+        "image":"https://sidsfarm.com/wp-content/uploads/2022/05/Website-Image-01-1024x1024.png",
+        "quantity": "1L"
+      },
+      {
+        "name": "Cow Milk",
+        "brand": "Sid's Farm",
+        "description": "Pure and creamy milk from healthy cows.",
+        "price": 45.00,
+        "category": "milk",
+        "image":"https://sidsfarm.com/wp-content/uploads/2021/08/Cow-Milk-1-1024x1024.png",
+        "quantity": "1L"
+      },
+      {
+        "name": "Buffalo Milk",
+        "brand": "Sid's Farm",
+        "description": "Rich and flavorful milk from healthy buffaloes.",
+        "price": 55.00,
+        "category": "milk",
+        "image":"https://sidsfarm.com/wp-content/uploads/2022/08/A2-Buffalo-Milk-1024x1024.jpg",
+        "quantity": "1L"
+      },
+      {
+        "name": "Cow Curd",
+        "brand": "Sid's Farm",
+        "description": "Creamy and delicious curd made from cow's milk.",
+        "price": 30.00,
+        "category": "curd",
+        "image":"https://sidsfarm.com/wp-content/uploads/2021/08/Cow-Curd.png",
+        "quantity": "500g"
+      },
+      {
+        "name": "Buffalo Curd",
+        "brand": "Sid's Farm",
+        "description": "Thick and tangy curd made from buffalo milk.",
+        "price": 35.00,
+        "category": "curd",
+        "image":"https://sidsfarm.com/wp-content/uploads/2021/08/Buffalo-Curd.png",
+        "quantity": "500g"
+      },
+      {
+        "name": "Natural Paneer",
+        "brand": "Sid's Farm",
+        "description": "Fresh and soft paneer made from pure milk.",
+        "price": 60.00,
+        "category": "paneer",
+        "image":"https://sidsfarm.com/wp-content/uploads/2021/06/Natural-Paneer.png",
+        "quantity": "250g"
+      },
+      {
+        "name": "Pure Ghee",
+        "brand": "Sid's Farm",
+        "description": "Rich and aromatic clarified butter.",
+        "price": 90.00,
+        "category": "ghee",
+        "image":"https://sidsfarm.com/wp-content/uploads/2021/08/Buffalo-Ghee.png",
+        "quantity": "500g"
+      }
+
+     
+]
