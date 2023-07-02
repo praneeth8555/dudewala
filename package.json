@@ -16,10 +16,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "build": "react-scripts build",
     "install-server": "cd backend && npm install",
     "start-server": "cd backend && node index.js",
     "install-client": " npm install",
-    "render-postbuild": "NPM_CONFIG_PRODUCTION=false npm install  && npm run build ",
+    "build-client": " npm run build",
     "start-client": " npm start"
   },
   "eslintConfig": {
