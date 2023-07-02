@@ -1,45 +1,54 @@
-const express = require('express')
-const router = express.Router()
-const user = require('../models/User')
+const express = require('express');
+const router = express.Router();
+const user = require('../models/User');
 const { body, validationResult } = require('express-validator');
-const bcrypt=require("bcrypt");
-const jwt=require("jsonwebtoken")
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 
-
-router.post("/CreateUser",[
-body('email').isEmail(),
-body('name').isLength({ min: 5 }),
-body('password','didnt match minimum length').isLength({ min: 5 })],
-async (req, res) => {
+router.post(
+  '/CreateUser',
+  [
+    body('email').isEmail(),
+    body('name').isLength({ min: 5 }),
+    body('password', 'didnt match minimum length').isLength({ min: 5 }),
+  ],
+  async (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
-    } 
-    const User = await user.findOne({ email: req.body.email });
-		if (User)
-         return res
-				.status(409)
-				.send({ message: "User with given email already Exist!" });
-    const salt= await bcrypt.genSalt(process.env.SALT);
-    let secpassword=await bcrypt.hash(req.body.password,salt)   
-    try {
-        await user.create({
-            name: req.body.name,
-            email: req.body.email,
-            apartmentName: req.body.apartmentName,
-            blockNumber: req.body.blockNumber,
-            floorNumber: req.body.floorNumber,
-            roomNumber: req.body.roomNumber,
-            contactNumber: req.body.contactNumber,
-            password: secpassword
-        })
-        res.json({ success: true });
-    } catch (error) {
-        console.log(error)
-        res.json({ success: false });
     }
 
-})
+    const User = await user.findOne({ email: req.body.email });
+    if (User) {
+      return res.status(409).send({ message: 'User with given email already exists!' });
+    }
+
+    try {
+      const saltRounds = 10; // Number of salt rounds for bcrypt
+      const salt = await bcrypt.genSalt(saltRounds);
+      const secpassword = await bcrypt.hash(req.body.password, salt);
+
+      await user.create({
+        name: req.body.name,
+        email: req.body.email,
+        apartmentName: req.body.apartmentName,
+        blockNumber: req.body.blockNumber,
+        floorNumber: req.body.floorNumber,
+        roomNumber: req.body.roomNumber,
+        contactNumber: req.body.contactNumber,
+        password: secpassword,
+      });
+
+      res.json({ success: true });
+    } catch (error) {
+      console.log(error);
+      res.json({ success: false });
+    }
+  }
+);
+
+
+
 
 
 router.post("/LoginUser", [
