@@ -117,7 +117,7 @@ router.post('/updateUser', async (req, res) => {
         roomNumber,
         contactNumber
       },
-      { new: true } // To return the updated user data
+      { new: true } 
     );
 
     res.json({ success: true, User });

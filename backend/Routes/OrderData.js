@@ -63,17 +63,15 @@ router.post('/myOrderData', async (req, res) => {
 
 router.post('/todaysorders', async (req, res) => {
     try {
-        const today = new Date().toDateString(); // Get today's date in string format
+        const today = new Date().toDateString(); 
 
         const order = await Order.findOne({ email: req.body.email });
 
-        // Filter the order data for today's orders
         const todayOrders = order.order_data.filter((orderGroup) => {
             const orderDate = orderGroup[0].Order_date;
             return orderDate === today;
         });
 
-        // Extract the required fields from today's orders
         const extractedData = [];
         todayOrders.forEach((orderGroup) => {
             for (let i = 1; i < orderGroup.length; i++) {
