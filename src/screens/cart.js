@@ -124,7 +124,7 @@ export default function Cart() {
             <td className='fs-5' style={{fontWeight:'600'}}>{food.selectedQuantity}</td>
             <td className='fs-5' style={{fontWeight:'600'}}>{food.totalPrice}</td>
             <td ><button type="button" className="btn p-0" style={{ height: '30px', width: '30px', border: 'none', background: 'none', padding: 0 }}  onClick={() => { dispatch({ type: "REMOVE", index: index }) }}>
-              <img src="https://img.uxwing.com/wp-content/themes/uxwing/download/user-interface/delete-icon.svg" alt='delete'/>
+              <img src="https://imgur.com/rUAxV0S.png" alt='delete'/>
               </button> </td>
           </tr>
         ))}
