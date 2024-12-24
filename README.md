@@ -3,7 +3,7 @@ Here’s a template for your project’s README file:
 ```markdown
 # DudeWala
 
-**DudeWala** is a web-based e-commerce platform where users can order daily dairy products and set recurring orders for future deliveries.
+DudeWala is a web-based e-commerce platform where users can order daily dairy products and set recurring orders for future deliveries.
 
 ### Live Website:
 [DudeWala](https://dudewala.onrender.com/)
@@ -12,11 +12,11 @@ Here’s a template for your project’s README file:
 
 ## Features
 
-- **User Authentication**: Users can sign up and log in securely using JSON Web Tokens (JWT).
-- **Product Ordering**: Users can browse and order dairy products from the catalog.
-- **Recurring Orders**: Users can set up daily or periodic orders with cron jobs to automate recurring deliveries.
-- **State Management**: State management is handled using React Context and Reducer.
-- **Responsive Design**: The website is designed to be mobile-friendly and responsive, ensuring a smooth experience across devices.
+- User Authentication: Users can sign up and log in securely using JSON Web Tokens (JWT).
+- Product Ordering: Users can browse and order dairy products from the catalog.
+- Recurring Orders: Users can set up daily or periodic orders with cron jobs to automate recurring deliveries.
+- State Management: State management is handled using React Context and Reducer.
+- Responsive Design: The website is designed to be mobile-friendly and responsive, ensuring a smooth experience across devices.
   
 ---
 
